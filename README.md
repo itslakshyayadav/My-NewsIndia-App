@@ -1,2 +1,2 @@
-# My-NewsIndia-App
+# NewsIndiaApp
 my new app
