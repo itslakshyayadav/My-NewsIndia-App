@@ -13,9 +13,9 @@ export class NewsItems extends Component {
       this.props;
     return (
       <div className="">
-        <div className="mt-6 max-w-xs   border-2 border-black-600	p-4  bg-blue-50  min-h-120 max-h-120 ">
+        <div className="mt-6 max-w-xs	p-4 rounded-md bg-neutral-100  min-h-120 max-h-120 hover:drop-shadow-xl ">
           <div className="text-right mb-2.5">
-            <span class="bg-red-500 text-white text-sm  mr-2 px-2.5 py-0.5 rounded ">
+            <span class="bg-red-800 text-white text-sm  mr-2 px-2.5 py-0.5 rounded ">
               {source}
             </span>
           </div>
@@ -33,24 +33,27 @@ export class NewsItems extends Component {
             <h3 className=" font-semibold text-gray-900  ">
               <b> {title}.</b>
             </h3>
-            <p className="text-base font-semibold text-gray-900 mb-2.5  " style={{fontSize:".9rem"}}>
+            <p
+              className="text-base font-semibold text-gray-900 mb-2.5  "
+              style={{ fontSize: ".9rem" }}
+            >
               {description}..
             </p>
-          <p className="mb-2.5 ">
-            <small>
-              By{" "}
-              <i>
-                <b>{!author ? "Unknown" : author}</b>
-              </i>
-              on {new Date(date).toString()}
-            </small>
-          </p>
+            <p className="mb-2.5 ">
+              <small>
+                By{" "}
+                <i>
+                  <b>{!author ? "Unknown" : author}</b>
+                </i>
+                on {new Date(date).toString()}
+              </small>
+            </p>
           </div>
           <div className="text-center p-5">
             <a
               href={newsUrl}
               target="_blank"
-              className="py-2 px-4 bg-black hover:bg-gray-700 text-white rounded-sm "
+              className="py-2 px-4 bg-black hover:bg-gray-700  text-white rounded-md "
               rel="noreferrer"
             >
               Read More

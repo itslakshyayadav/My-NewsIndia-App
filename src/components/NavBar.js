@@ -5,7 +5,7 @@ export class NavBar extends Component {
   render() {
     return (
       <div className="">
-        <nav className="bg-gray-800 ">
+        <nav className="bg-gray-800 sticky w-full top-0">
           <div className=" max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               {/* <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -49,18 +49,19 @@ export class NavBar extends Component {
                   </svg>
                 </button>
               </div> */}
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex gap-8 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <Link to="general" alt="">
-                    
-                    <span className="text-white">NewsIndia+</span>
+                    <span className="text-3xl text-white font-semibold">
+                      NewsIndia+
+                    </span>
                   </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     <Link
                       to="general"
-                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-md font-medium"
                       aria-current="page"
                     >
                       General
@@ -68,45 +69,44 @@ export class NavBar extends Component {
 
                     <Link
                       to="business"
-                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-md font-medium"
                     >
                       Business
                     </Link>
                     <Link
                       to="entertainment"
-                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-md font-medium"
                     >
                       Entertainment
                     </Link>
-                   
+
                     <Link
                       to="health"
-                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-md font-medium"
                     >
                       Health
                     </Link>
                     <Link
                       to="science"
-                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-md font-medium"
                     >
                       Science
                     </Link>
                     <Link
                       to="sports"
-                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-md font-medium"
                     >
                       Sports
                     </Link>
                     <Link
                       to="technology"
-                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-md font-medium"
                     >
                       Technology
                     </Link>
                   </div>
                 </div>
               </div>
-             
             </div>
           </div>
 
